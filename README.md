@@ -12,7 +12,7 @@
         </tr>
         <tr>
             <td style='width: 50%;'>Language<br></td>
-            <td style='width: 50%;'>Python<br></td>
+            <td style='width: 50%;'>JavaScript<br></td>
         </tr>
         <tr>
             <td style='width: 50%;'>Database<br></td>
