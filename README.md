@@ -2,7 +2,7 @@
 
 ## Abstract Factory
 
-![AbstractFactory](<../Abstract Factory-1.PNG>)
+![AbstractFactory](../Abstract Factory-1.PNG)
 
 ## Builder
 
