@@ -1,5 +1,13 @@
 # MIKS
 
+## Abstract Factory
+
+![AbstractFactory](https://github.com/Folen-arch/MIKS/blob/lab2/Abstract%20Factory-1.PNG)
+
+## Builder
+
+![Builder](https://github.com/Folen-arch/MIKS/blob/lab2/Builder-1.PNG)
+
 <table style ='width: 100%;' border="1">
     <tbody>
         <tr>
