@@ -6,54 +6,10 @@
         <title>Web Proxy Example</title>
     </head>
     <body>
+        <script src="webPage.js"></script>
+        <script src="realWebPage.js"></script>
+        <script src="webPageProxy.js"></script>
         <script>
-            class WebPage {
-                load() {}
-            }
-
-            class RealWebPage extends WebPage {
-                constructor(url) {
-                    super();
-                    this.url = url;
-                    this.content = null;
-                }
-
-                load() {
-                    console.log(`Loading ${this.url} from the internet`);
-                    this.content = `Content of ${this.url}`;
-                }
-            }
-
-            class WebPageProxy extends WebPage {
-                constructor(url, cacheLifetime) {
-                    super();
-                    this.url = url;
-                    this.cacheLifetime = cacheLifetime;
-                    this.cachedPage = null;
-                    this.lastAccessTime = null;
-                }
-
-                load() {
-                    if (!this.cachedPage || this.isCacheExpired()) {
-                        const realPage = new RealWebPage(this.url);
-                        realPage.load();
-                        this.cachedPage = realPage;
-                        this.lastAccessTime = new Date();
-                    } else {
-                        console.log(`Retrieving ${this.url} from cache`);
-                    }
-
-                    return this.cachedPage.content;
-                }
-
-                isCacheExpired() {
-                    const currentTime = new Date();
-                    const elapsedMilliseconds = currentTime - this.lastAccessTime;
-                    const elapsedSeconds = elapsedMilliseconds / 1000;
-                    return elapsedSeconds > this.cacheLifetime;
-                }
-            }
-
             function main() {
                 const url = "http://example.com";
                 const cacheLifetime = 5;
