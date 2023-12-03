@@ -1,4 +1,3 @@
-// realWebPage.js
 class RealWebPage extends WebPage {
     constructor(url) {
         super();

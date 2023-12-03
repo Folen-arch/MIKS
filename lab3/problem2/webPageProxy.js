@@ -1,4 +1,3 @@
-// webPageProxy.js
 class WebPageProxy extends WebPage {
     constructor(url, cacheLifetime) {
         super();
