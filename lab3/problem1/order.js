@@ -4,19 +4,26 @@ function placeOrder() {
     const quantity = parseInt(document.getElementById("quantity").value, 10) || 1;
 
     let shawarma;
+    const turkish = "turkish";
+    const dubai = "dubai";
+    const hummus = "hummus";
+    const garlic_sauce = "garlic-sauce";
 
-    if (shawarmaType === "turkish") {
-        shawarma = new TurkishShawarma();
-    } else if (shawarmaType === "dubai") {
-        shawarma = new DubaiShawarma();
+    switch (shawarmaType) {
+        case turkish:
+            shawarma = new TurkishShawarma();
+            break;
+        case dubai:
+            shawarma = new DubaiShawarma();
+            break;
     }
 
     selectedAddOns.forEach((addOn) => {
         switch (addOn) {
-            case "hummus":
+            case hummus:
                 shawarma = new HummusDecorator(shawarma);
                 break;
-            case "garlic-sauce":
+            case garlic_sauce:
                 shawarma = new GarlicSauceDecorator(shawarma);
                 break;
         }
