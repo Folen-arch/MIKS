@@ -1,12 +1,12 @@
 # MIKS
 
-## Abstract Factory
+## Proxy
 
-![AbstractFactory](https://github.com/Folen-arch/MIKS/blob/lab2/Abstract%20Factory-1.PNG)
+![Proxy](./Proxy.PNG)
 
-## Builder
+## Decorator
 
-![Builder](https://github.com/Folen-arch/MIKS/blob/lab2/Builder-1.PNG)
+![Decorator](./Decorator.PNG)
 
 <table style ='width: 100%;' border="1">
     <tbody>
