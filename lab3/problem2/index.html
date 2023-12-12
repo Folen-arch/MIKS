@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Web Proxy Example</title>
+    </head>
+    <body>
+        <script src="webPage.js"></script>
+        <script src="realWebPage.js"></script>
+        <script src="webPageProxy.js"></script>
+        <script>
+            function main() {
+                const url = "http://example.com";
+                const cacheLifetime = 5;
+
+                const proxy = new WebPageProxy(url, cacheLifetime);
+
+                const content = proxy.load();
+                console.log(content);
+
+                const cachedContent = proxy.load();
+                console.log(cachedContent);
+
+                setTimeout(() => {
+                    const refreshedContent = proxy.load();
+                    console.log(refreshedContent);
+                }, (cacheLifetime + 1) * 1000);
+            }
+
+            main();
+        </script>
+    </body>
+</html>
