@@ -1,5 +1,11 @@
 # MIKS
 
+## Iterator
+![Iterator](Iterator.png)
+
+## Observer
+![Observer](Observer.png)
+
 ## Abstract Factory
 
 ![AbstractFactory](Abstract_Factory-1.PNG)
