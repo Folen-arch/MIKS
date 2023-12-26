@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Online Store</title>
+    </head>
+    <body>
+        <button onclick="toggleAvailability()">Toggle Product Availability</button>
+        <button onclick="changePrice()">Change Product Price</button>
+
+        <div>
+            <p>Product: <span id="productName"></span></p>
+            <p>Price: <span id="productPrice"></span> USD</p>
+            <p>Availability: <span id="productAvailability"></span></p>
+        </div>
+
+        <div id="output"></div>
+
+        <script src="product.js"></script>
+        <script src="observer.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
