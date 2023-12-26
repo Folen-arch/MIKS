@@ -4,24 +4,27 @@ class Squad {
     }
 
     *airAttackIterator() {
+        const airAttack = "Air Attack";
         for (const unit of this.units) {
-            if (unit.command === "Air Attack") {
+            if (unit.command === airAttack) {
                 yield unit;
             }
         }
     }
 
     *fastMoveIterator() {
+        const fastMove = "Fast Move";
         for (const unit of this.units) {
-            if (unit.command === "Fast Move") {
+            if (unit.command === fastMove) {
                 yield unit;
             }
         }
     }
 
     *meleeAttackIterator() {
+        const meleeAttack = "Melee Attack";
         for (const unit of this.units) {
-            if (unit.command === "Melee Attack") {
+            if (unit.command === meleeAttack) {
                 yield unit;
             }
         }
